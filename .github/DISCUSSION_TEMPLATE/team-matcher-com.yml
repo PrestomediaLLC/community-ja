@@ -1,0 +1,26 @@
+title: "[team-matcher.com] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ようこそ！**team-matcher.com** に関する質問、機能のリクエスト、フィードバックにはこのフォームをご利用ください。個人情報は記入しないでください。
+  - type: dropdown
+    id: topic-type
+    attributes:
+      label: "ご用件をお選びください"
+      options:
+        - "一般的な質問をする"
+        - "問題 / バグのヘルプを求める"
+        - "新機能や改善案を提案する"
+        - "その他 / 全般的なフィードバック"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: メッセージ内容
+      description: 質問、問題、アイデアの詳細をご記入ください。
+      placeholder: ここにメッセージを入力してください...
+    validations:
+      required: true
